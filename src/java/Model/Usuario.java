@@ -32,6 +32,8 @@ public class Usuario {
         return cpf;
     }
     
+    
+    
     public void setCpf(String cpf) {
         this.cpf = cpf;
     }  
