@@ -1,20 +1,25 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
+
 <html>
     <head>
-        <title>TODO supply a title</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+        <title>E-commerce</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="produtos.html">Produtos</a></li>
-    </ul>
+
     </head>
     <body>
-        <div>TODO write content </div>
+      <form class="form-signin" action="FrontController?action=Login" method="post">
+        <h2 class="form-signin-heading">Seja bem vindo ao E-Commerce!</h2>
+        <br>
+		<label for="inputEmail" class="sr-only">Email</label>
+        <input type="email" name="email" id="inputEmail" class="form-control" placeholder="Digite seu email" required="" autofocus="">
+		<br>
+        <label for="inputPassword" class="sr-only">Senha</label>
+        <input type="password" name="senha" id="inputPassword" class="form-control" placeholder="Digite sua senha" required="">
+		<br>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Entrar na Loja</button>
+      </form>
     </body>
 </html>
